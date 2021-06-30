@@ -1,0 +1,76 @@
+.image-grid-6col {
+    display: grid;
+    grid-template-columns: repeat(6, min-content);
+    justify-content: space-between;
+
+    @include respond(bp-small) {
+        grid-template-columns: repeat(3, min-content);
+        grid-template-rows: repeat(2, min-content);
+        gap: 1.5rem;
+    }
+}
+
+.image-grid-4col {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    @include respond(bp-small) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, min-content);
+    }
+
+    @include respond(bp-xsmall) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, min-content);
+    }
+}
+
+.image-grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: space-between;
+
+    @include respond(bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        gap: 1.5rem;
+    }
+
+}
+
+.image-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: space-between;
+
+    @include respond(bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+.grid-2col1row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    @include respond(bp-xsmall) {
+        gap: 1rem;
+    }
+
+    &--smertebert {
+        grid-template-columns: 1fr min-content;
+        justify-content: space-between;
+
+        @include respond(bp-small) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, min-content);
+            align-items: inherit;
+            gap: 1.5rem;
+        }
+    }
+}

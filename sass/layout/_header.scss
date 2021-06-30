@@ -1,0 +1,122 @@
+.header {
+    height: 100vh;
+    padding: $padding-primary;
+
+    @include respond(bp-medium) {
+        padding: $padding-secondary;
+    }
+
+    @include respond(bp-small) {
+        padding: $padding-tertiary;
+    }
+
+    @include respond(bp-xsmall) {
+        padding: $padding-quaternary;
+    }
+
+    &__index {
+        background-color: $color-secondary;
+        position: relative;
+
+        &__container {
+            display: grid;
+
+            @include respond(bp-small) {
+                place-items: center;
+            }
+
+            &--textbox {
+                margin-top: 25rem;
+                max-width: 52rem;
+
+                @include respond(bp-medium) {
+                    max-width: 50rem;
+                }
+
+                @include respond(bp-small) {
+                    place-items: center;
+                    margin-top: 10rem;
+                    max-width: 65rem;
+                    text-align: center;
+                }
+
+                @include respond(bp-xsmall) {
+                    margin-top: 5rem;
+                }
+
+                @include respond(bp-xlarge) {
+                    min-width: 70rem;
+                }
+            }
+
+            &--illu {
+                max-height: 65rem;
+                position: absolute;
+                bottom: 0;
+                right: 20rem;
+
+                @include respond(bp-medium) {
+                    justify-content: center;
+                    right: 10rem;
+                }
+
+                @include respond(bp-xsmall) {
+                    max-height: 60rem;
+                    right: .5rem;
+                }
+            }
+        }
+
+        // @media only screen and (max-width: $bp-medium) {
+        //     padding: 5vw 5vw 5vw 5vw;
+        // }
+    }
+
+    &__aboutme {
+        height: 5rem;
+    }
+
+    &__modus {
+        background-color: $color-primary-modus;
+    }
+
+    &__jeghardeg {
+        background-color: $color-secondary-jeghardeg;
+    }
+
+    &__smertebert {
+        background-image: url(../assets/img/bg-smertebert.png);
+    }
+
+    &__projects {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     gap: 5rem;
+        // }
+
+        &--modus {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            &--image {
+                width: 20rem;
+            }
+        }
+
+        &--jeghardeg {
+            width: 70rem;
+
+            // @media only screen and (max-width: $bp-small) {
+            //     width: 45rem;
+            // }
+        }
+
+        &--smertebert {
+            width: 40rem;
+        }
+    }
+}

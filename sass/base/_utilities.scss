@@ -1,0 +1,151 @@
+//Elementavstand
+
+//Forside
+.margin-top-xlarge {
+    margin-top: 20rem;
+}
+
+//Over H1 og H2
+.margin-top-large {
+    margin-top: 11.25rem;
+}
+
+//Over H3
+.margin-top-medium {
+    margin-top: 6.25rem;
+}
+
+//Over H4
+.margin-top-small {
+    margin-top: 3.12rem;
+}
+
+//Under H1
+.margin-bottom-large {
+    margin-bottom: 4.37rem;
+}
+
+//Under H3
+.margin-bottom-medium {
+    margin-bottom: 3.12rem;
+
+    &--modus {
+        margin-bottom: 3.12rem;
+
+        @include respond(bp-small) {
+            margin-bottom: 1rem;
+        }
+
+        // @media only screen and (max-width: $bp-small) {
+        //     margin-bottom: 1rem;
+        // }
+    }
+}
+
+//Under H4
+.margin-bottom-small {
+    margin-bottom: .75rem;
+}
+
+// Bildestørrelser
+.image-front {
+    width: 10rem;
+}
+
+.image-fullsize {
+    width: 100%;
+}
+
+.image-large {
+    max-width: 45rem;
+
+    @include respond(bp-large) {
+        max-width: 40rem;
+    }
+
+    @include respond(bp-small) {
+        max-width: 20rem;
+        min-width: 100%;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 92vw;
+    // }
+}
+
+.image-medium {
+    max-width: 30rem;
+
+    @include respond(bp-medium) {
+        max-width: 25rem;
+    }
+
+    @include respond(bp-small) {
+        min-width: 100%;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 92vw;
+    // }
+}
+
+.image-small {
+    max-width: 20rem;
+
+    @include respond(bp-medium) {
+        min-width: 100%;
+    }
+
+    // @include respond(bp-xsmall) {
+    //     max-width: 2rem;
+    // }
+
+    @include respond(bp-xlarge) {
+        min-width: 30rem;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 22rem;
+    // }
+}
+
+// .image-xsmall {
+//     width: 13rem;
+
+//     // @media only screen and (max-width: $bp-small) {
+//     //     width: 6rem;
+//     // }
+// }
+
+// .image-xxsmall {
+//     width: 5rem;
+// }
+
+.image-height {
+    height: 7rem;
+
+    @include respond(bp-xsmall) {
+        height: 5rem;
+    }
+}
+
+//Modus wireframes og brukertest
+.image-modus-medium {
+    width: 30rem;
+
+    @include respond(bp-small) {
+        width: 20rem;
+    }
+
+    // @media only screen and (max-width: $bp-small) {
+    //     width: 22rem;
+    // }
+}
+
+.image-modus-small {
+    width: 18rem;
+
+    @include respond(bp-small) {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+.aboutme {
+    padding: $padding-primary;
+
+    // @media only screen and (max-width: $bp-small) {
+    //     padding: $padding-secondary;
+    // }
+}
+
+.references {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+
+    &__image {
+        width: 50rem;
+        text-align: center;
+        &--file {
+            width: 10rem;
+        }
+        &--name {
+            font-size: 1.5rem;
+        }
+    }
+    &__quote {
+        font-size: 1.6rem;
+    }
+    
+}

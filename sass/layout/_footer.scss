@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+    padding: 5rem 20rem 5rem 20rem;
+
+    @include respond(bp-small) {
+        height: 30vh;
+        padding: 2rem 5rem 2rem 5rem;
+    }
+
+    &__index {
+        background-color: $color-secondary;
+    }
+
+    &__aboutme {
+        background-color: $color-index;
+    }
+
+    &__modus {
+        background-color: $color-primary-modus;
+    }
+
+    &__jeghardeg {
+        background-color: $color-secondary-jeghardeg;
+    }
+
+    &__smertebert {
+        background-color: $color-primary-smertebert
+    }
+
+    &__icons {
+        &--image {
+            width: 10rem;
+            padding: 0 1rem 0 1rem;
+        }
+    }
+}

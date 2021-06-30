@@ -1,0 +1,191 @@
+//Modus
+
+.slideshow-container {
+    display: grid;
+
+    position: relative;
+    margin: 0 auto;
+    place-items: center;
+
+    &__slides {
+        display: none;
+
+        &--box {
+            display: grid;
+            grid-template-columns: min-content min-content;
+            grid-template-rows: min-content min-content;
+            gap: 5rem;
+            place-items: center;
+            margin: 0 auto;
+
+            @include respond(bp-small) {
+                grid-template-columns: min-content;
+                justify-content: center;
+            }
+
+            &--media {
+                &--modus {
+                    width: 30rem;
+                }
+            }
+
+            &--text {
+                width: 60rem;
+                padding: 3rem;
+                background-color: #4f4cee;
+                color: white;
+                border-radius: 30px;
+
+                @include respond(bp-small) {
+                    width: 30rem;
+                }
+
+                &--paragraph {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        width: 2rem;
+    }
+
+    &__dots {
+        display: grid;
+        grid-auto-flow: column;
+        width: 15rem;
+        place-items: center;
+
+        &--dot {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $color-secondary-modus;
+        }
+    }
+
+}
+
+.slideshow-container__dots--dot:hover {
+    background-color: $color-primary-modus;
+
+    @media only screen and (max-width: $bp-small) {
+        background-color: none;
+    }
+}
+
+.active {
+    background-color: $color-primary-modus;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+}
+
+
+
+//Jeg har deg
+
+.ads-container {
+    display: grid;
+
+    position: relative;
+    margin: 0 auto;
+    place-items: center;
+
+    &__ads {
+        display: none;
+
+        &--box {
+            display: grid;
+            grid-template-columns: min-content min-content;
+            grid-template-rows: min-content min-content;
+            place-items: center;
+            margin: 0 auto;
+
+            @include respond(bp-small) {
+                grid-template-columns: min-content;
+                justify-content: center;
+            }
+
+            &--media {
+                &--jeghardeg {
+                    max-width: 60rem;
+
+                    @include respond(bp-small) {
+                        width: 40rem;
+                    }
+
+                    @include respond(bp-xsmall) {
+                        width: 25rem;
+                    }
+
+                    // @media only screen and (max-width: $bp-small) {
+                    //     width: 35rem;
+                    // }
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        width: 2rem;
+    }
+
+    &__dots {
+        display: grid;
+        grid-auto-flow: column;
+        width: 15rem;
+        place-items: center;
+
+        &--jeghardeg-dot {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $color-secondary-jeghardeg;
+        }
+    }
+}
+
+.ads-container__dots--jeghardeg-dot:hover {
+    background-color: $color-primary-jeghardeg;
+
+    // @media only screen and (max-width: $bp-small) {
+    //     background-color: none;
+    // }
+}
+
+.jeghardeg-active {
+    background-color: $color-primary-jeghardeg;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+}

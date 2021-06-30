@@ -1,0 +1,46 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    // @include respond(bp-large) {
+    //     font-size: 60%;
+    // }
+
+    @include respond(bp-large) {
+        font-size: 50%;
+    }
+
+    // @include respond(bp-medium) { // width < 1200?
+    //     font-size: 45%; //1 rem = 9px, 9/16 = 50%
+    // }
+
+    // @include respond(bp-small) { // width < 900?
+    //     font-size: 40%; //1 rem = 8px, 8/16 = 50%
+    // }
+
+    // @include respond(bp-xsmall) { // 
+    //     font-size: 20%; //1 rem = 8px, 8/16 = 50%
+    // }
+    
+    @include respond(bp-xlarge) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-primary;
+    color: $color-primary;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
