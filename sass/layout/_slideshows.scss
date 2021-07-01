@@ -110,7 +110,11 @@
 
             &--media {
                 &--modus {
-                    max-width: 20rem;
+                    max-width: 30rem;
+
+                    @include respond(bp-small) {
+                        max-width: 20rem;
+                    }
                 }
             }
 

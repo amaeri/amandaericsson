@@ -517,7 +517,10 @@ li:first-child {
           grid-template-columns: min-content;
           justify-content: center; } }
       .slideshow-container__slides--box--media--modus {
-        max-width: 20rem; }
+        max-width: 30rem; }
+        @media only screen and (max-width: 50em) {
+          .slideshow-container__slides--box--media--modus {
+            max-width: 20rem; } }
       .slideshow-container__slides--box--text {
         max-width: 45rem;
         padding: 3rem; }
