@@ -97,7 +97,7 @@
 
         &--box {
             display: grid;
-            grid-template-columns: min-content min-content;
+            grid-template-columns: min-content 1fr;
             grid-template-rows: min-content min-content;
             gap: 5rem;
             place-items: center;
@@ -110,23 +110,16 @@
 
             &--media {
                 &--modus {
-                    width: 30rem;
+                    max-width: 30rem;
                 }
             }
 
             &--text {
-                width: 60rem;
+                max-width: 45rem;
                 padding: 3rem;
-                background-color: #4f4cee;
-                color: white;
-                border-radius: 30px;
 
                 @include respond(bp-small) {
-                    width: 30rem;
-                }
-
-                &--paragraph {
-                    font-size: 1.5rem;
+                    text-align: center;
                 }
             }
         }
