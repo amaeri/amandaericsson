@@ -249,7 +249,10 @@ a {
       max-width: 20rem; } }
 
 .image-modus-small {
-  max-width: 18rem; }
+  max-width: 30rem; }
+  @media only screen and (max-width: 80em) {
+    .image-modus-small {
+      max-width: 20rem; } }
   @media only screen and (max-width: 50em) {
     .image-modus-small {
       max-width: 15rem;

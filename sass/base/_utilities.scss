@@ -144,7 +144,11 @@
 }
 
 .image-modus-small {
-    max-width: 18rem;
+    max-width: 30rem;
+
+    @include respond(bp-large) {
+        max-width: 20rem;
+    }
 
     @include respond(bp-small) {
         max-width: 15rem;
