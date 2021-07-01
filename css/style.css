@@ -387,7 +387,7 @@ a {
             right: 10rem; } }
         @media only screen and (max-width: 27.5em) {
           .header__index__container--illu {
-            max-height: 45rem;
+            max-height: 40rem;
             right: 5rem; } }
   .header__aboutme {
     height: 5rem; }
