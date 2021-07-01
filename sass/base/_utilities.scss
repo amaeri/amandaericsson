@@ -132,9 +132,9 @@
 
 //Modus wireframes og brukertest
 .image-modus-medium {
-    max-width: 30rem;
+    width: 30rem;
 
-    @include respond(bp-xsmall) {
+    @include respond(bp-small) {
         max-width: 20rem;
     }
 

@@ -243,8 +243,8 @@ a {
       height: 5rem; } }
 
 .image-modus-medium {
-  max-width: 30rem; }
-  @media only screen and (max-width: 27.5em) {
+  width: 30rem; }
+  @media only screen and (max-width: 50em) {
     .image-modus-medium {
       max-width: 20rem; } }
 
