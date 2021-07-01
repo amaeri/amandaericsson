@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang='no'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width' , initial-scale='1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Om meg</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='../css/style.css'>
+
+    <script defer src='../js/aboutme.js'></script>
+</head>
+
+<body>
+    <header class="header header__aboutme">
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__ul--li"><a href="../index.html"><img src="../assets/img/logo-purple.png" alt="Logo"
+                            class="nav__ul--li--logo"></li></a>
+                <li class="nav__ul--li"><a href="../index.html#projects-link"
+                        class="nav__links nav__links--index">Prosjekter</a></li>
+                <li class="nav__ul--li"><a href="../pages/aboutme.html" class="nav__links nav__links--index">Om meg</a>
+                </li>
+                <li class="nav__ul--li"><a href="../assets/cv-amanda.pdf" target="_blank"
+                        class="nav__links nav__links--index">CV</a>
+                </li>
+                <li class="nav__ul--li"><a href="#footer-link" class="nav__links nav__links--index">Kontakt</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="aboutme margin-bottom-medium margin-top-large">
+        <div class="header__text-box">
+            <h1 class="heading-primary heading-primary--aboutme margin-bottom-medium">
+                Amanda Jullum Ericsson
+            </h1>
+
+            <p class="paragraph margin-bottom-medium">
+                Jeg ble ferdigutdannet <span class="paragraph__aboutme">interaksjonsdesigner</span> våren 2021, og
+                er herved jobbsøker 🙌🏼
+                Jeg gleder meg enormt til å komme ut i arbeidslivet i faget jeg brenner for, og ser frem i mot å ta
+                fatt
+                på nye utfordringer.
+            </p>
+            <p class="paragraph margin-bottom-medium">
+                Fra før har jeg en bachelor i handels- og serviceledelse fra NTNU i Ålesund, i tillegg til mange års
+                arbeidserfaring innenfor servicebransjen - både fra handel og hotell. Den tidligere erfaringen min
+                har vært gull verdt i løpet av dette studiet.</p>
+
+            <p class="paragraph margin-bottom-medium">
+                Som interaksjonsdesigner har jeg en indre motivasjon til å skape et godt produkt basert på en god
+                prosess, med
+                grundig research og brukertester. Jeg har et godt øye for detaljer, og har sansen for nøyaktighet.
+                Som medarbeider kan jeg bidra med godt humør, lærevillighet, positivitet, humor, nysgjerrighet,
+                empati, og jeg tar gjerne på meg en utfordring eller to. Jeg trives godt i samarbeid med andre, der man
+                har mulighet til å sparre og spille hverandre gode, men jeg liker også å jobbe selvstendig.
+            </p>
+        </div>
+
+        <h3 class="heading-tertiary margin-top-medium margin-bottom-medium">Referanser</h3>
+
+        <div class="ref-container">
+            <a class="prev" onclick="plusSlides(-1)"><img class="ref-container__arrow"
+                    src="../assets/img/ref-arrow-left.png" alt="pil venstre"></a>
+
+            <div class="ref-container__slides">
+                <div class="ref-container__slides--box">
+                    <figure class="ref-container__slides--box--fig">
+                        <img class="ref-container__slides--box--fig--image" src="../assets/img/ketil.png"
+                            alt="Ketil Christiansen">
+                        <figcaption class="ref-container__slides--box--fig--name"><span class="paragraph__bold">Ketil
+                                Christiansen</span></figcaption>
+                        <figcaption class="ref-container__slides--box--fig--title">Fagskolelærer i grafisk design
+                        </figcaption>
+                    </figure>
+                    <q class="ref-container__slides--box--quote">Som lærer har jeg hatt den glede av å jobbe med Amanda
+                        ved
+                        flere
+                        anledninger. Jeg
+                        opplever henne som en veldig hyggelig og positiv designer som også evner å overholde tidsfrister
+                        samt levere
+                        løsninger av høy kvalitet. Anbefales!</q>
+                </div>
+            </div>
+
+            <div class="ref-container__slides">
+
+                <div class="ref-container__slides--box">
+                    <figure class="ref-container__slides--box--fig">
+                        <img class="ref-container__slides--box--fig--image" src="../assets/img/ref-jonas.png"
+                            alt="Jonas Lotherington">
+                        <figcaption class="ref-container__slides--box--fig--name"><span class="paragraph__bold">Jonas
+                                Lotherington</span></figcaption>
+                        <figcaption class="ref-container__slides--box--fig--title">Consulting manager UX
+                        </figcaption>
+                    </figure>
+                    <q class="ref-container__slides--box--quote">I løpet av 10 raske uker utførte Amanda, Linh og
+                        Jacqueline
+                        grundig innsiktsarbeid, leverte overbevisende presentasjoner og bidro til videreutvikling av
+                        systemer for Skoleskyss på en veldig tilfredstillende måte.
+                    </q>
+                </div>
+            </div>
+
+            <a class="next" onclick="plusSlides(1)"><img class="ref-container__arrow"
+                    src="../assets/img/ref-arrow-right.png" alt="pil høyre"></a>
+
+
+            <div class="ref-container__dots margin-top-small">
+                <div class="ref-container__dots--refdot" onclick="plusSlides(1)"></div>
+                <div class="ref-container__dots--refdot" onclick="plusSlides(1)"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer__aboutme" id="footer-link">
+        <p class="footer__paragraph margin-bottom-medium">
+            Lyst til å ta en prat over en kaffekopp? ☕️ Ta gjerne kontakt!
+        </p>
+        <div class="footer__icons margin-bottom-large">
+            <a href="mailto:amaericsson@gmail.com"><img class="footer__icons--image" src="../assets/img/email.png"
+                    alt="E-mail"></a>
+            <a href="https://www.linkedin.com/in/amanda-jullum-ericsson-39208499/"><img class="footer__icons--image"
+                    src="../assets/img/linkedin.png" alt="LinkedIn"></a>
+        </div>
+
+        <p class="footer__paragraph">Copyright 2021 © Designet og kodet av Amanda Jullum Ericsson</p>
+    </footer>
+</body>
+
+</html>

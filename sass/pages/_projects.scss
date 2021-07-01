@@ -26,6 +26,7 @@
                 max-width: 5rem;
 
                 @include respond(bp-xsmall) {
+                    gap: 0;
                     max-width: 4rem;
                 }
             }
@@ -55,13 +56,13 @@
             }
         }
 
-        &--design {
-            &--wireframes {
-                &--images {
-                    width: 100%;
-                }
-            }
-        }
+        // &--design {
+        //     &--wireframes {
+        //         &--images {
+        //             width: 100%;
+        //         }
+        //     }
+        // }
 
         &--marketing {
             &--some {

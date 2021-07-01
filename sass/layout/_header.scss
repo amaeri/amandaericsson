@@ -21,27 +21,19 @@
         &__container {
             display: grid;
 
-            @include respond(bp-small) {
+            @include respond(bp-medium) {
                 place-items: center;
             }
 
             &--textbox {
-                margin-top: 25rem;
-                max-width: 52rem;
+                margin-top: 15rem;
+                max-width: 60rem;
 
                 @include respond(bp-medium) {
-                    max-width: 50rem;
-                }
-
-                @include respond(bp-small) {
                     place-items: center;
                     margin-top: 10rem;
                     max-width: 65rem;
                     text-align: center;
-                }
-
-                @include respond(bp-xsmall) {
-                    margin-top: 5rem;
                 }
 
                 @include respond(bp-xlarge) {
@@ -56,13 +48,18 @@
                 right: 20rem;
 
                 @include respond(bp-medium) {
-                    justify-content: center;
+                    place-items: center;
+                    right: 30rem;
+                }
+
+                @include respond(bp-small) {
+                    max-height: 55rem;
                     right: 10rem;
                 }
 
                 @include respond(bp-xsmall) {
-                    max-height: 60rem;
-                    right: .5rem;
+                    max-height: 45rem;
+                    right: 5rem;
                 }
             }
         }

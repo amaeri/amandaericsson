@@ -21,10 +21,10 @@
         grid-template-rows: repeat(2, min-content);
     }
 
-    @include respond(bp-xsmall) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, min-content);
-    }
+    // @include respond(bp-xsmall) {
+    //     grid-template-columns: repeat(1, 1fr);
+    //     grid-template-rows: repeat(2, min-content);
+    // }
 }
 
 .image-grid-3col {
@@ -54,22 +54,26 @@
 
 .grid-2col1row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr min-content;
     gap: 2rem;
+    justify-content: space-between;
     align-items: center;
 
-    @include respond(bp-xsmall) {
-        gap: 1rem;
+    @include respond(bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, min-content);
+        align-items: inherit;
+        gap: 1.5rem;
     }
 
-    &--smertebert {
-        grid-template-columns: 1fr min-content;
-        justify-content: space-between;
-
+    &--modus {
+        grid-template-columns: repeat(2, 1fr);
+    
         @include respond(bp-small) {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, min-content);
-            align-items: inherit;
+            align-items: center;
+        }
+
+        @include respond(bp-xsmall) {
             gap: 1.5rem;
         }
     }

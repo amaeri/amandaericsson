@@ -29,7 +29,6 @@
     font-family: $font-secondary;
     font-size: 3.75rem;
     text-transform: uppercase;
-    font-weight: 100;
 
     // @media only screen and (max-width: $bp-small) {
     //     font-size: 3.5rem;
@@ -37,7 +36,7 @@
 
     &--index {
         font-family: $font-secondary;
-        font-size: 4rem;
+        font-size: 6rem;
         color: $color-index;
         margin-bottom: 2rem;
         text-transform: none;
@@ -70,7 +69,6 @@
     font-family: $font-secondary;
     font-size: 2.8rem;
     text-transform: uppercase;
-    font-weight: 100;
 
     // @media only screen and (max-width: $bp-small) {
     //     font-size: 2.5rem;
@@ -98,7 +96,6 @@
 .heading-tertiary {
     font-family: $font-secondary;
     font-size: 2.2rem;
-    font-weight: 100;
 
     // @media only screen and (max-width: $bp-small) {
     //     font-size: 2rem;
@@ -166,7 +163,7 @@
     // }
 
     &__index {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
 
         // @media only screen and (max-width: $bp-small) {
         //     font-size: 1.8rem;
@@ -230,10 +227,6 @@ a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 400;
-
-    @include respond(bp-small) {
-        font-size: 2rem;
-    }
 
     // @media only screen and (max-width: $bp-medium) {
     //     font-size: 2.3rem;

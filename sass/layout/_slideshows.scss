@@ -1,3 +1,88 @@
+// Referanser
+.ref-container {
+    display: grid;
+    position: relative;
+    // margin: 0 auto;
+    place-items: center;
+
+    &__slides {
+        display: none;
+
+        &--box {
+            display: flex;
+            min-width: 40rem;
+            flex-direction: row;
+            place-items: center;
+            text-align: center;
+            gap: 5rem;
+            // margin: 0 auto;
+            padding: 0 10rem 0 10rem;
+
+            @include respond(bp-small) {
+                flex-direction: column;
+                max-width: 60rem;
+                gap: 3rem;
+            }
+
+            @include respond(bp-xsmall) {
+                min-width: 20rem;
+                padding: 0 5rem 0 5rem;
+            }
+
+            &--fig {
+                min-width: 20rem;
+
+                &--image {
+                    max-width: 10rem;
+                }
+
+                &--name {
+                    font-size: 1.5rem;
+                }
+
+                &--title {
+                    font-size: 1.2rem;
+                }
+            }
+
+            &--quote {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__arrow {
+        width: 2rem;
+    }
+
+    &__dots {
+        display: grid;
+        grid-auto-flow: column;
+        max-width: 10rem;
+        gap: 3rem;
+        place-items: center;
+
+        &--refdot {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: #C7BEF9;
+        }
+    }
+}
+
+.slideshow-container__dots--dot:hover {
+    background-color: $color-index;
+
+    @include respond(bp-medium) {
+        background-color: none;
+    }
+}
+
+.ref-active {
+    background-color: $color-index;
+}
+
 //Modus
 
 .slideshow-container {

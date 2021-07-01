@@ -96,9 +96,9 @@
         min-width: 100%;
     }
 
-    // @include respond(bp-xsmall) {
-    //     max-width: 2rem;
-    // }
+    @include respond(bp-small) {
+        max-width: 15rem;
+    }
 
     @include respond(bp-xlarge) {
         min-width: 30rem;
@@ -131,10 +131,10 @@
 
 //Modus wireframes og brukertest
 .image-modus-medium {
-    width: 30rem;
+    max-width: 30rem;
 
-    @include respond(bp-small) {
-        width: 20rem;
+    @include respond(bp-xsmall) {
+        max-width: 20rem;
     }
 
     // @media only screen and (max-width: $bp-small) {
@@ -143,9 +143,10 @@
 }
 
 .image-modus-small {
-    width: 18rem;
+    max-width: 18rem;
 
     @include respond(bp-small) {
+        max-width: 15rem;
         min-width: 100%;
     }
 }
