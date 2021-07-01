@@ -27,13 +27,17 @@
 
             &--textbox {
                 margin-top: 15rem;
-                max-width: 60rem;
+                max-width: 55rem;
 
                 @include respond(bp-medium) {
                     place-items: center;
                     margin-top: 10rem;
                     max-width: 65rem;
                     text-align: center;
+                }
+
+                @include respond(bp-xsmall) {
+                    margin-top: 5rem;
                 }
 
                 @include respond(bp-xlarge) {
@@ -49,11 +53,12 @@
 
                 @include respond(bp-medium) {
                     place-items: center;
+                    max-height: 55rem;
                     right: 30rem;
                 }
 
                 @include respond(bp-small) {
-                    max-height: 55rem;
+                    max-height: 45rem;
                     right: 10rem;
                 }
 
