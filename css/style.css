@@ -197,7 +197,10 @@ a {
   margin-bottom: .75rem; }
 
 .image-front {
-  width: 10rem; }
+  max-width: 20rem; }
+  @media only screen and (max-width: 27.5em) {
+    .image-front {
+      max-width: 15rem; } }
 
 .image-fullsize {
   width: 100%; }

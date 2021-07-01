@@ -49,7 +49,11 @@
 
 // Bildestørrelser
 .image-front {
-    width: 10rem;
+    max-width: 20rem;
+
+    @include respond(bp-xsmall) {
+        max-width: 15rem;
+    }
 }
 
 .image-fullsize {
