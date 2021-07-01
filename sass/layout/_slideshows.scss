@@ -110,7 +110,7 @@
 
             &--media {
                 &--modus {
-                    max-width: 30rem;
+                    max-width: 20rem;
                 }
             }
 
@@ -119,7 +119,9 @@
                 padding: 3rem;
 
                 @include respond(bp-small) {
+                    min-width: 35rem;
                     text-align: center;
+                    padding: 0;
                 }
             }
         }
