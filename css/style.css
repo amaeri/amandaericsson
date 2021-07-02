@@ -183,18 +183,18 @@ a {
   margin-top: 3.12rem; }
 
 .margin-bottom-large {
-  margin-bottom: 4.37rem; }
+  margin-bottom: 6.2rem; }
 
 .margin-bottom-medium {
-  margin-bottom: 3.12rem; }
+  margin-bottom: 4.37rem; }
   .margin-bottom-medium--modus {
-    margin-bottom: 3.12rem; }
+    margin-bottom: 4.37rem; }
     @media only screen and (max-width: 50em) {
       .margin-bottom-medium--modus {
         margin-bottom: 1rem; } }
 
 .margin-bottom-small {
-  margin-bottom: .75rem; }
+  margin-bottom: 3.12rem; }
 
 .image-front {
   max-width: 20rem; }
