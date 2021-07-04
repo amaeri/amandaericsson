@@ -22,17 +22,15 @@
 
 //Under H1
 .margin-bottom-large {
-    margin-bottom: 6.2rem;
-    // margin-bottom: 4.37rem;
+    margin-bottom: 4.37rem;
 }
 
 //Under H3
 .margin-bottom-medium {
-    margin-bottom: 4.37rem;
-    // margin-bottom: 3.12rem;
+    margin-bottom: 3.12rem;
 
     &--modus {
-        margin-bottom: 4.37rem;
+        margin-bottom: 3.12rem;
 
         @include respond(bp-small) {
             margin-bottom: 1rem;
@@ -46,8 +44,7 @@
 
 //Under H4
 .margin-bottom-small {
-    margin-bottom: 3.12rem;
-    // margin-bottom: .75rem;
+    margin-bottom: 1.5rem;
 }
 
 // Bildestørrelser
