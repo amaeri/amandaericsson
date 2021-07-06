@@ -252,9 +252,6 @@ a {
   @media only screen and (max-width: 50em) {
     .image-small {
       max-width: 15rem; } }
-  @media only screen and (min-width: 112.5em) {
-    .image-small {
-      min-width: 30rem; } }
 
 .image-height {
   height: 7rem; }
