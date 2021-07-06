@@ -52,7 +52,17 @@
     max-width: 20rem;
 
     @include respond(bp-xsmall) {
+        margin-top: 10rem;
         max-width: 15rem;
+    }
+
+    &--large {
+        max-width: 40rem;
+
+        @include respond(bp-xsmall) {
+            margin-top: 10rem;
+            max-width: 30rem;
+        }
     }
 }
 

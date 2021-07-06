@@ -79,6 +79,13 @@
                 }
             }
         }
+
+        &--programming {
+            &--app {
+                display: grid;
+                place-items: center;
+            }
+        }
     }
 }
 

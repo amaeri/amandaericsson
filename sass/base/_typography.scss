@@ -3,7 +3,7 @@
     font-size: 7rem;
 
     @include respond(bp-xsmall) {
-        font-size: 4rem;
+        font-size: 8rem;
     }
 
     // @media only screen and (max-width: $bp-small) {
@@ -18,10 +18,18 @@
 
     &--jeghardeg {
         font-family: $font-jeghardeg;
+
+        @include respond(bp-xsmall) {
+            font-size: 6rem;
+        }
     }
 
     &--smertebert {
         font-family: $font-smertebert;
+    }
+
+    &--skattejaget {
+        font-family: $font-skattejaget;
     }
 }
 
@@ -46,6 +54,12 @@
         // }
     }
 
+    &--aboutme {
+        color: $color-index;
+        text-align: center;
+        border-bottom: 2px solid $color-index;
+    }
+
     &--modus {
         color: $color-primary-modus;
     }
@@ -58,11 +72,10 @@
         color: $color-secondary-smertebert;
     }
 
-    &--aboutme {
-        color: $color-index;
-        text-align: center;
-        border-bottom: 2px solid $color-index;
+    &--skattejaget {
+        color: $color-primary-skattejaget;
     }
+    
 }
 
 .heading-secondary {
@@ -91,6 +104,12 @@
         border-top: 2px solid $color-primary-smertebert;
         border-bottom: 2px solid $color-primary-smertebert;
     }
+
+    &--skattejaget {
+        color: $color-secondary-skattejaget;
+        border-top: 2px solid $color-secondary-skattejaget;
+        border-bottom: 2px solid $color-secondary-skattejaget;
+    }    
 }
 
 .heading-tertiary {
@@ -144,6 +163,10 @@
 
     &--smertebert {
         color: $color-secondary-smertebert;
+    }
+
+    &--skattejaget {
+        color: $color-secondary-skattejaget;
     }
 }
 

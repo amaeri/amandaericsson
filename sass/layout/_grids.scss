@@ -66,6 +66,18 @@
         gap: 1.5rem;
     }
 
+    &--textbox {
+        width: 50rem;
+
+        @include respond(bp-small) {
+            width: auto;
+        }
+
+        @include respond(bp-xlarge) {
+            min-width: 65rem;
+        }
+    }
+
     &--modus {
         grid-template-columns: repeat(2, 1fr);
     

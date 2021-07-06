@@ -90,6 +90,10 @@
         background-image: url(../assets/img/bg-smertebert.png);
     }
 
+    &__skattejaget {
+        background-color: $color-primary-skattejaget;
+    }
+
     &__projects {
         display: grid;
         place-items: center;

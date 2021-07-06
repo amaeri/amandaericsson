@@ -34,15 +34,20 @@ body {
   font-size: 7rem; }
   @media only screen and (max-width: 27.5em) {
     .header__title {
-      font-size: 4rem; } }
+      font-size: 8rem; } }
   .header__title--modus {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 600; }
   .header__title--jeghardeg {
     font-family: "Merriweather", serif; }
+    @media only screen and (max-width: 27.5em) {
+      .header__title--jeghardeg {
+        font-size: 6rem; } }
   .header__title--smertebert {
     font-family: "Chewy"; }
+  .header__title--skattejaget {
+    font-family: "Bangers", cursive; }
 
 .heading-primary {
   font-family: "Fjalla One", sans-serif;
@@ -54,16 +59,18 @@ body {
     color: #9280f4;
     margin-bottom: 2rem;
     text-transform: none; }
+  .heading-primary--aboutme {
+    color: #9280f4;
+    text-align: center;
+    border-bottom: 2px solid #9280f4; }
   .heading-primary--modus {
     color: #4f4cee; }
   .heading-primary--jeghardeg {
     color: #b32739; }
   .heading-primary--smertebert {
     color: #428177; }
-  .heading-primary--aboutme {
-    color: #9280f4;
-    text-align: center;
-    border-bottom: 2px solid #9280f4; }
+  .heading-primary--skattejaget {
+    color: #2f2f2f; }
 
 .heading-secondary {
   font-family: "Fjalla One", sans-serif;
@@ -81,6 +88,10 @@ body {
     color: #87bab2;
     border-top: 2px solid #87bab2;
     border-bottom: 2px solid #87bab2; }
+  .heading-secondary--skattejaget {
+    color: #12cdd4;
+    border-top: 2px solid #12cdd4;
+    border-bottom: 2px solid #12cdd4; }
 
 .heading-tertiary {
   font-family: "Fjalla One", sans-serif;
@@ -103,6 +114,8 @@ body {
     color: #b32739; }
   .heading-quaternary--smertebert {
     color: #428177; }
+  .heading-quaternary--skattejaget {
+    color: #12cdd4; }
 
 .paragraph {
   font-size: 1.8rem; }
@@ -200,7 +213,14 @@ a {
   max-width: 20rem; }
   @media only screen and (max-width: 27.5em) {
     .image-front {
+      margin-top: 10rem;
       max-width: 15rem; } }
+  .image-front--large {
+    max-width: 40rem; }
+    @media only screen and (max-width: 27.5em) {
+      .image-front--large {
+        margin-top: 10rem;
+        max-width: 30rem; } }
 
 .image-fullsize {
   width: 100%; }
@@ -278,6 +298,8 @@ a {
     background-color: #123b77; }
   .footer__smertebert {
     background-color: #87bab2; }
+  .footer__skattejaget {
+    background-color: #2f2f2f; }
   .footer__icons--image {
     width: 10rem;
     padding: 0 1rem 0 1rem; }
@@ -334,6 +356,14 @@ a {
       grid-template-rows: repeat(2, min-content);
       align-items: inherit;
       gap: 1.5rem; } }
+  .grid-2col1row--textbox {
+    width: 50rem; }
+    @media only screen and (max-width: 50em) {
+      .grid-2col1row--textbox {
+        width: auto; } }
+    @media only screen and (min-width: 112.5em) {
+      .grid-2col1row--textbox {
+        min-width: 65rem; } }
   .grid-2col1row--modus {
     grid-template-columns: repeat(2, 1fr); }
     @media only screen and (max-width: 50em) {
@@ -404,6 +434,8 @@ a {
     background-color: #123b77; }
   .header__smertebert {
     background-image: url(../assets/img/bg-smertebert.png); }
+  .header__skattejaget {
+    background-color: #2f2f2f; }
   .header__projects {
     display: grid;
     place-items: center;
@@ -726,6 +758,9 @@ li:first-child {
       @media only screen and (max-width: 27.5em) {
         .projects-layout__process--marketing--some--image {
           max-width: 15rem; } }
+  .projects-layout__process--programming--app {
+    display: grid;
+    place-items: center; }
 
 .ads-document {
   display: grid;
